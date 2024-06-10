@@ -1,0 +1,94 @@
+@import "../../../vars.css";
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 5%;
+    z-index: 2;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+.name {
+    font-size: flex;
+    font-weight: 900;
+    margin-bottom: 33px;
+}
+
+.discription {
+    font-size: 30px;
+    margin-bottom: 52px;
+}
+
+.heroImg {
+    width: 20%;
+    z-index: 2;
+    
+    animation-name: smth;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+
+}
+
+@keyframes smth {
+    0%{
+        transform: translate(0, 0px);
+    }
+    50%{
+        transform: translate(0, 10px);
+    }
+    100%{
+        transform: translate(0, -1px);
+    }
+
+}
+
+.topBlur{
+    position: absolute;
+    width: 50vw;
+    height: 40vw;
+    min-width: 350px;
+    min-height: 350px;
+    top: -200px;
+    left: 0vw;
+    border: 764px;
+    background: rgba(250, 139, 200, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+
+.bottomBlur{
+    position: absolute;
+    width: 70vw;
+    height: 20vw;
+    min-width: 350px;
+    min-height: 250px;
+    top: 246px;
+    bottom: -200vm;
+    right: -25vw;
+    border: 746px;
+    background: rgba(133, 213, 245, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+}
+@media screen and (max-width: 830px) {
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .content{
+        align-items: center;
+    }
+}

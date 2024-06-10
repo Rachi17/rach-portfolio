@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Industrial Hackathon 24’",
+        "imageSrc": "api.png",
+        "description": "Encryption of sensitive information while sending it through API"
+    },
+    {
+        
+        "title": "Industrial Hackathon 23’",
+        "imageSrc": "uno.png",
+        "description": "Smart dustbin IOT based using ARDUINO"
+    },
+    {
+        
+        "title": "Smart India Hackathon",
+        "imageSrc": "esp.png",
+        "description": "Smart home automation using ESP 32"
+    }
+]

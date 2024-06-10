@@ -1,0 +1,74 @@
+@import "../../vars.css";
+
+
+.navbar {
+    text-decoration: none;
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    z-index: 3;
+    margin: 0 10%;
+    padding-bottom: 20px;
+}
+
+
+.title {
+    font-size: 40px;
+    padding-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    text-decoration: none;
+    color:rgb(248, 133, 152);
+}
+
+.menuItems {
+    gap: 20px;
+    list-style: none;
+}
+
+
+@media screen  and (max-width: 1000000px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        position: absolute;
+        right: 0;
+        margin-right: 10%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 7px;
+        z-index: 3;
+    }
+
+    .menuBtn {
+        display: block;
+        cursor: pointer;
+        width: 70px;
+    }
+
+    .menuItems {
+        text-decoration: none;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        border-radius: 20px;
+        background: rgb(39, 77, 146);
+        background: linear-gradient(0deg, rgba(50, 99, 192, 0.2) 0%, rgb(78, 75, 241) 100%);
+
+        padding: 24px 33px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0, 25);
+    }
+
+    .menuOpen {
+        display: flex;
+        z-index: 2;
+    }
+
+    
+}
